@@ -2,6 +2,8 @@
 
 アラビカ種の生豆条件から、カッピング総合点の参考値を予測する Streamlit アプリです。品質認証や取引判断には使いません。
 
+公開アプリ: https://beanscope-um49b9it9bbt44tqfv84na.streamlit.app/
+
 ## 起動
 
 ```bash
