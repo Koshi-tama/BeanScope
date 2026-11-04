@@ -1,0 +1,42 @@
+BeanScope Phase 2 training report
+============================================================
+selected_model: random_forest
+selection_rule: d02_mae_best_non_dummy_WARNING_does_not_beat_dummy
+D01 n=1309  D02 n=207  production n=1309
+calibration n=30  holdout n=177  selected bias=+1.147
+
+Shrinkage a (chosen on D01 from 2016, dummy unchanged)
+----------------------------------------
+  ridge                    a=0.4
+  random_forest            a=0.4
+  hist_gradient_boosting   a=0.3
+
+D01 GroupKFold CV (MAE mean±std)
+----------------------------------------
+  ridge                    MAE=1.673±0.116  RMSE=2.478  R2=0.137
+  random_forest            MAE=1.678±0.121  RMSE=2.471  R2=0.142
+  hist_gradient_boosting   MAE=1.692±0.123  RMSE=2.497  R2=0.124
+  dummy_median             MAE=1.793±0.107  RMSE=2.691  R2=-0.021
+
+D02 uncalibrated (all rows, one shot)
+----------------------------------------
+  dummy_median             MAE=1.702  RMSE=2.106  R2=-0.489
+  random_forest            MAE=1.778  RMSE=2.160  R2=-0.566 <-- selected
+  ridge                    MAE=1.797  RMSE=2.175  R2=-0.587
+  hist_gradient_boosting   MAE=1.804  RMSE=2.172  R2=-0.584
+
+D02 holdout after adding the constant from the earliest 30 rows
+----------------------------------------
+  random_forest            bias=+1.147  MAE=1.369  RMSE=1.738  R2=0.054 <-- selected
+  hist_gradient_boosting   bias=+1.197  MAE=1.388  RMSE=1.769  R2=0.020
+  ridge                    bias=+1.201  MAE=1.388  RMSE=1.761  R2=0.029
+  dummy_median             MAE=1.777  RMSE=2.174  R2=-0.481
+  dummy_plus_own_bias      bias=+1.016  MAE=1.408  RMSE=1.801  R2=-0.016
+
+  beats_dummy=True
+  cv_external_mae_gap=0.309
+
+Artifacts -> /Users/koshi/workspace/dev/personalDev/BeanScope/models/artifacts
+  beanscope_pipeline.joblib
+  metadata.json
+  evaluation.json

@@ -1,0 +1,14 @@
+Level-calibration constant, chosen on the earliest 30 D02 rows
+============================================================
+D01 全体で学習し、a で縮めた予測に対して
+評価日が早い D02 の 30 件で bias = mean(正解 - 予測) を決める。
+残り 177 件の正解はこの平均に使っていない。
+calibration 2022-05-11 -> 2022-07-11
+n_calibration=30  n_holdout=177
+
+dummy_median: a=none  bias=+1.016  cal pred=82.500  cal actual=83.516
+ridge: a=0.4  bias=+1.201  cal pred=82.315  cal actual=83.516
+random_forest: a=0.4  bias=+1.147  cal pred=82.369  cal actual=83.516
+hist_gradient_boosting: a=0.3  bias=+1.197  cal pred=82.319  cal actual=83.516
+
+Wrote /Users/koshi/workspace/dev/personalDev/BeanScope/models/artifacts/calibration/chosen_bias.json

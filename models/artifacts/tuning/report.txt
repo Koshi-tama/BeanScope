@@ -1,0 +1,23 @@
+BeanScope hyperparameter search
+============================================================
+D01 GroupKFold でパラメータを選択し、D02 は各モデル1回だけ評価した。
+Phase 2 の成果物は変更していない。
+D01 n=1309  D02 n=207  fits=293
+dummy D02 MAE=1.702  RMSE=2.106  R2=-0.489
+
+Tuned models (ranked by D01 CV MAE)
+----------------------------------------
+  random_forest            CV MAE=1.596±0.122  D02 MAE=1.798  RMSE=2.185  R2=-0.602  beats_dummy=False <-- selected on D01 CV
+    params={'model__n_estimators': 200, 'model__min_samples_leaf': 4, 'model__max_features': 0.3, 'model__max_depth': None}
+    phase2 D02 MAE=1.860  delta=-0.062
+  hist_gradient_boosting   CV MAE=1.612±0.125  D02 MAE=1.865  RMSE=2.238  R2=-0.680  beats_dummy=False
+    params={'model__min_samples_leaf': 10, 'model__max_iter': 100, 'model__max_depth': None, 'model__learning_rate': 0.03, 'model__l2_regularization': 0.1}
+    phase2 D02 MAE=1.935  delta=-0.070
+  ridge                    CV MAE=1.645±0.132  D02 MAE=1.796  RMSE=2.199  R2=-0.622  beats_dummy=False
+    params={'model__alpha': 10.0}
+    phase2 D02 MAE=1.798  delta=-0.002
+
+selected_by_d01_cv: random_forest
+selected_beats_dummy_external_mae: False
+
+Wrote /Users/koshi/workspace/dev/personalDev/BeanScope/models/artifacts/tuning/search.json

@@ -1,0 +1,240 @@
+{
+  "cv_d01_group_kfold": {
+    "dummy_median": {
+      "mae_mean": 1.7931313503553568,
+      "mae_std": 0.10730286545445475,
+      "rmse_mean": 2.69089760654564,
+      "rmse_std": 0.3126750256793667,
+      "r2_mean": -0.020644688596456538,
+      "r2_std": 0.016512925500928886
+    },
+    "ridge": {
+      "mae_mean": 1.6733548193882641,
+      "mae_std": 0.11568289515090446,
+      "rmse_mean": 2.4783377841004857,
+      "rmse_std": 0.3268980473601388,
+      "r2_mean": 0.13678419954269938,
+      "r2_std": 0.03531761954886647
+    },
+    "random_forest": {
+      "mae_mean": 1.6776399588504431,
+      "mae_std": 0.12062344153957345,
+      "rmse_mean": 2.4708260970595033,
+      "rmse_std": 0.3338503520111134,
+      "r2_mean": 0.1423694461468731,
+      "r2_std": 0.038862426400338816
+    },
+    "hist_gradient_boosting": {
+      "mae_mean": 1.691747408752131,
+      "mae_std": 0.1231129086463606,
+      "rmse_mean": 2.496688179249177,
+      "rmse_std": 0.3321372453232963,
+      "r2_mean": 0.12419396416118338,
+      "r2_std": 0.03354308867821024
+    }
+  },
+  "external_d02_all_models": {
+    "dummy_median": {
+      "mae": 1.7018357487922704,
+      "rmse": 2.106107520733186,
+      "r2": -0.4885473409564418
+    },
+    "ridge": {
+      "mae": 1.7967093789994342,
+      "rmse": 2.1749407395766047,
+      "r2": -0.5874367487120369
+    },
+    "random_forest": {
+      "mae": 1.7781833307187445,
+      "rmse": 2.160148444533619,
+      "r2": -0.5659171003581891
+    },
+    "hist_gradient_boosting": {
+      "mae": 1.804288593910807,
+      "rmse": 2.172494749318394,
+      "r2": -0.5838682179684969
+    }
+  },
+  "selected_model": "random_forest",
+  "selection_rule": "d02_mae_best_non_dummy_WARNING_does_not_beat_dummy",
+  "external_d02_uncalibrated": {
+    "mae": 1.7781833307187445,
+    "rmse": 2.160148444533619,
+    "r2": -0.5659171003581891
+  },
+  "baseline_dummy_external_d02_uncalibrated": {
+    "mae": 1.7018357487922704,
+    "rmse": 2.106107520733186,
+    "r2": -0.4885473409564418
+  },
+  "d02_level_calibration": {
+    "n_calibration": 30,
+    "n_holdout": 177,
+    "bias_by_model": {
+      "ridge": 1.2005380275752549,
+      "random_forest": 1.146595205731307,
+      "hist_gradient_boosting": 1.1967864080209176
+    },
+    "holdout_calibrated": {
+      "ridge": {
+        "mae": 1.3882372911709568,
+        "rmse": 1.760881006287407,
+        "r2": 0.028998428605996773
+      },
+      "random_forest": {
+        "mae": 1.3687045045201331,
+        "rmse": 1.7383187499019255,
+        "r2": 0.053721998528239334
+      },
+      "hist_gradient_boosting": {
+        "mae": 1.3875106251637865,
+        "rmse": 1.7693103564135286,
+        "r2": 0.01967979457448188
+      }
+    },
+    "holdout_dummy_median": {
+      "mae": 1.7766101694915253,
+      "rmse": 2.174419852492902,
+      "r2": -0.4806306108859635
+    },
+    "dummy_bias_from_same_calibration_rows": 1.0159999999999996,
+    "holdout_dummy_plus_own_bias": {
+      "mae": 1.407706214689265,
+      "rmse": 1.8008258494682354,
+      "r2": -0.015554761665654393
+    }
+  },
+  "external_d02": {
+    "mae": 1.3687045045201331,
+    "rmse": 1.7383187499019255,
+    "r2": 0.053721998528239334
+  },
+  "baseline_dummy_external_d02": {
+    "mae": 1.7766101694915253,
+    "rmse": 2.174419852492902,
+    "r2": -0.4806306108859635
+  },
+  "acceptance": {
+    "mae_beats_dummy": true,
+    "mae_under_2_optional_goal": true,
+    "cv_vs_external_mae_gap": 0.30893545433031
+  },
+  "subgroup_mae_d02_holdout": {
+    "country": {
+      "Taiwan": {
+        "n": 58,
+        "mae": 1.443210551672767
+      },
+      "Colombia": {
+        "n": 16,
+        "mae": 1.5075634805106706
+      },
+      "Guatemala": {
+        "n": 15,
+        "mae": 1.274003847691074
+      },
+      "Brazil": {
+        "n": 10,
+        "mae": 2.3284031886169045
+      },
+      "Honduras": {
+        "n": 10,
+        "mae": 0.6630150631261642
+      },
+      "Thailand": {
+        "n": 10,
+        "mae": 1.1825042145995837
+      },
+      "Ethiopia": {
+        "n": 9,
+        "mae": 0.6647657943395586
+      },
+      "Costa Rica": {
+        "n": 8,
+        "mae": 1.1894562951065701
+      },
+      "El Salvador": {
+        "n": 6,
+        "mae": 1.982473997655499
+      },
+      "Tanzania": {
+        "n": 6,
+        "mae": 1.2760252419283542
+      },
+      "Nicaragua": {
+        "n": 5,
+        "mae": 1.6060815167766436
+      },
+      "United States (Hawaii)": {
+        "n": 5,
+        "mae": 1.1712214648179355
+      }
+    },
+    "process": {
+      "Washed": {
+        "n": 103,
+        "mae": 1.2778011747403493
+      },
+      "Natural": {
+        "n": 42,
+        "mae": 1.5391834482607274
+      },
+      "Honey": {
+        "n": 23,
+        "mae": 1.2548024715766544
+      },
+      "Missing": {
+        "n": 5,
+        "mae": 1.3110567501700188
+      }
+    }
+  },
+  "feature_importance_permutation_d02": [
+    {
+      "feature": "altitude_m",
+      "importance_mean": 0.027262723877555926,
+      "importance_std": 0.01552153490054401
+    },
+    {
+      "feature": "category_2_defects",
+      "importance_mean": 0.0232166344365754,
+      "importance_std": 0.016034463664789705
+    },
+    {
+      "feature": "category_1_defects",
+      "importance_mean": 0.010571255965876936,
+      "importance_std": 0.006817188057845033
+    },
+    {
+      "feature": "country",
+      "importance_mean": 0.009238339444543376,
+      "importance_std": 0.012694440750579239
+    },
+    {
+      "feature": "color",
+      "importance_mean": 0.0009705759925636937,
+      "importance_std": 0.002164080193238482
+    },
+    {
+      "feature": "process",
+      "importance_mean": -0.0023242647281918717,
+      "importance_std": 0.004745356644449436
+    },
+    {
+      "feature": "moisture_pct",
+      "importance_mean": -0.011119850151199739,
+      "importance_std": 0.005274613819477645
+    },
+    {
+      "feature": "variety",
+      "importance_mean": -0.041325027947422675,
+      "importance_std": 0.006944234745394315
+    }
+  ],
+  "shrinkage_a": {
+    "ridge": 0.4,
+    "random_forest": 0.4,
+    "hist_gradient_boosting": 0.3
+  },
+  "distribution_shift_note": "D02 scores skew higher than D01; negative R2 on D02 can occur when absolute error is still moderate. Prefer MAE for acceptance."
+}

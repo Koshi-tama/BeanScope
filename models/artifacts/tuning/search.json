@@ -1,0 +1,277 @@
+{
+  "created_at_utc": "2026-11-04T01:28:22.030994+00:00",
+  "motivation": "Phase 2 external test MAE did not beat dummy_median. This search was run afterwards. Hyperparameters were chosen on D01 GroupKFold only. Each tuned model was scored once on D02.",
+  "selection_rule": "lowest D01 GroupKFold MAE among tuned models",
+  "selected_by_d01_cv": "random_forest",
+  "cv": {
+    "splitter": "GroupKFold",
+    "n_splits": 5,
+    "data": "D01"
+  },
+  "n_fits_including_refit": 293,
+  "dummy_median_external_d02": {
+    "mae": 1.7018357487922704,
+    "rmse": 2.106107520733186,
+    "r2": -0.4885473409564418
+  },
+  "phase2_untuned_external_d02": {
+    "dummy_median": {
+      "mae": 1.7018357487922704,
+      "rmse": 2.106107520733186,
+      "r2": -0.4885473409564418
+    },
+    "ridge": {
+      "mae": 1.797592588016064,
+      "rmse": 2.18851478807307,
+      "r2": -0.607313322433441
+    },
+    "random_forest": {
+      "mae": 1.8600536868428912,
+      "rmse": 2.2409051324860547,
+      "r2": -0.6851886132207572
+    },
+    "hist_gradient_boosting": {
+      "mae": 1.9353450137277628,
+      "rmse": 2.326724941397791,
+      "r2": -0.8167353382087825
+    }
+  },
+  "models": {
+    "ridge": {
+      "search": "grid",
+      "n_iter_requested": null,
+      "n_candidates": 10,
+      "n_splits": 5,
+      "n_fits": 50,
+      "best_params": {
+        "model__alpha": 10.0
+      },
+      "cv_mae_mean": 1.6451188974150122,
+      "cv_mae_std": 0.13236769159073636,
+      "top_candidates": [
+        {
+          "rank": 1,
+          "mae_mean": 1.6451188974150122,
+          "mae_std": 0.13236769159073636,
+          "params": {
+            "model__alpha": 10.0
+          }
+        },
+        {
+          "rank": 2,
+          "mae_mean": 1.6498103559402533,
+          "mae_std": 0.1348204360110143,
+          "params": {
+            "model__alpha": 30.0
+          }
+        },
+        {
+          "rank": 3,
+          "mae_mean": 1.6512217941025038,
+          "mae_std": 0.1338297547551338,
+          "params": {
+            "model__alpha": 3.0
+          }
+        },
+        {
+          "rank": 4,
+          "mae_mean": 1.6549651559590053,
+          "mae_std": 0.13469821602358348,
+          "params": {
+            "model__alpha": 1.0
+          }
+        },
+        {
+          "rank": 5,
+          "mae_mean": 1.6571334982004369,
+          "mae_std": 0.13447390985220178,
+          "params": {
+            "model__alpha": 0.3
+          }
+        }
+      ],
+      "fit_seconds": 1.7211256250739098,
+      "external_d02": {
+        "mae": 1.7958149051755299,
+        "rmse": 2.198585092149598,
+        "r2": -0.6221392433699426
+      },
+      "beats_dummy_external_mae": false
+    },
+    "random_forest": {
+      "search": "random",
+      "n_iter_requested": 24,
+      "n_candidates": 24,
+      "n_splits": 5,
+      "n_fits": 120,
+      "best_params": {
+        "model__n_estimators": 200,
+        "model__min_samples_leaf": 4,
+        "model__max_features": 0.3,
+        "model__max_depth": null
+      },
+      "cv_mae_mean": 1.5964672755964617,
+      "cv_mae_std": 0.12211629899284224,
+      "top_candidates": [
+        {
+          "rank": 1,
+          "mae_mean": 1.5964672755964617,
+          "mae_std": 0.12211629899284224,
+          "params": {
+            "model__n_estimators": 200,
+            "model__min_samples_leaf": 4,
+            "model__max_features": 0.3,
+            "model__max_depth": null
+          }
+        },
+        {
+          "rank": 2,
+          "mae_mean": 1.597720326811275,
+          "mae_std": 0.13254576951327154,
+          "params": {
+            "model__n_estimators": 600,
+            "model__min_samples_leaf": 2,
+            "model__max_features": "sqrt",
+            "model__max_depth": 12
+          }
+        },
+        {
+          "rank": 3,
+          "mae_mean": 1.598041083099907,
+          "mae_std": 0.13138780137332431,
+          "params": {
+            "model__n_estimators": 600,
+            "model__min_samples_leaf": 2,
+            "model__max_features": "sqrt",
+            "model__max_depth": null
+          }
+        },
+        {
+          "rank": 4,
+          "mae_mean": 1.6082881475001145,
+          "mae_std": 0.12631016670675305,
+          "params": {
+            "model__n_estimators": 400,
+            "model__min_samples_leaf": 4,
+            "model__max_features": 0.5,
+            "model__max_depth": 16
+          }
+        },
+        {
+          "rank": 5,
+          "mae_mean": 1.6093659438660641,
+          "mae_std": 0.13304961453475275,
+          "params": {
+            "model__n_estimators": 600,
+            "model__min_samples_leaf": 8,
+            "model__max_features": 0.5,
+            "model__max_depth": 16
+          }
+        }
+      ],
+      "fit_seconds": 5.0300028750207275,
+      "external_d02": {
+        "mae": 1.7983659445351625,
+        "rmse": 2.1846880345593855,
+        "r2": -0.6016972631610946
+      },
+      "beats_dummy_external_mae": false
+    },
+    "hist_gradient_boosting": {
+      "search": "random",
+      "n_iter_requested": 24,
+      "n_candidates": 24,
+      "n_splits": 5,
+      "n_fits": 120,
+      "best_params": {
+        "model__min_samples_leaf": 10,
+        "model__max_iter": 100,
+        "model__max_depth": null,
+        "model__learning_rate": 0.03,
+        "model__l2_regularization": 0.1
+      },
+      "cv_mae_mean": 1.611956334992391,
+      "cv_mae_std": 0.12488499517651563,
+      "top_candidates": [
+        {
+          "rank": 1,
+          "mae_mean": 1.611956334992391,
+          "mae_std": 0.12488499517651563,
+          "params": {
+            "model__min_samples_leaf": 10,
+            "model__max_iter": 100,
+            "model__max_depth": null,
+            "model__learning_rate": 0.03,
+            "model__l2_regularization": 0.1
+          }
+        },
+        {
+          "rank": 2,
+          "mae_mean": 1.618059417937928,
+          "mae_std": 0.123064992175534,
+          "params": {
+            "model__min_samples_leaf": 10,
+            "model__max_iter": 100,
+            "model__max_depth": 6,
+            "model__learning_rate": 0.03,
+            "model__l2_regularization": 0.0
+          }
+        },
+        {
+          "rank": 3,
+          "mae_mean": 1.6186116375743063,
+          "mae_std": 0.1196191449967033,
+          "params": {
+            "model__min_samples_leaf": 20,
+            "model__max_iter": 100,
+            "model__max_depth": 6,
+            "model__learning_rate": 0.03,
+            "model__l2_regularization": 1.0
+          }
+        },
+        {
+          "rank": 4,
+          "mae_mean": 1.61960693140278,
+          "mae_std": 0.1307569504045129,
+          "params": {
+            "model__min_samples_leaf": 10,
+            "model__max_iter": 200,
+            "model__max_depth": 3,
+            "model__learning_rate": 0.03,
+            "model__l2_regularization": 1.0
+          }
+        },
+        {
+          "rank": 5,
+          "mae_mean": 1.627921739140049,
+          "mae_std": 0.13146722569216912,
+          "params": {
+            "model__min_samples_leaf": 10,
+            "model__max_iter": 100,
+            "model__max_depth": 6,
+            "model__learning_rate": 0.05,
+            "model__l2_regularization": 0.1
+          }
+        }
+      ],
+      "fit_seconds": 3.4169238328468055,
+      "external_d02": {
+        "mae": 1.8653332526430029,
+        "rmse": 2.237540477893287,
+        "r2": -0.6801318878861513
+      },
+      "beats_dummy_external_mae": false
+    }
+  },
+  "selected_external_d02": {
+    "mae": 1.7983659445351625,
+    "rmse": 2.1846880345593855,
+    "r2": -0.6016972631610946
+  },
+  "selected_beats_dummy_external_mae": false,
+  "notes": [
+    "D02 labels were not used to choose parameters or the selected model.",
+    "Phase 2 artifacts under models/artifacts/*.json and the production joblib are unchanged.",
+    "A one-shot D02 score can still be worse than Dummy when the score distribution shifts."
+  ]
+}

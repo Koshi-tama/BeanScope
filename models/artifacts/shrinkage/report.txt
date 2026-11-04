@@ -1,0 +1,11 @@
+Shrinkage factor a, chosen on D01 from 2016 onward
+============================================================
+2016-01-01 より前で学習し、2016年以降の MAE が最小の a を採用する。
+D02 の正解は使用していない。
+early n=817  late n=205  undated excluded n=287
+
+ridge: a=0.4  late MAE=1.517  center=82.104
+random_forest: a=0.4  late MAE=1.492  center=82.218
+hist_gradient_boosting: a=0.3  late MAE=1.427  center=82.381
+
+Wrote /Users/koshi/workspace/dev/personalDev/BeanScope/models/artifacts/shrinkage/chosen_a.json

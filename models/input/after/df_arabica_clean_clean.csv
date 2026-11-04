@@ -1,0 +1,208 @@
+country,altitude_m,variety,process,moisture_pct,category_1_defects,category_2_defects,color,target_score
+Colombia,1815.0,Castillo,Washed,11.8,0,3,Green,89.33
+Taiwan,1200.0,Gesha,Washed,10.5,0,0,Blue-Green,87.58
+Laos,1300.0,Java,Semi-Washed,10.4,0,2,Yellow-Green,87.42
+Costa Rica,1900.0,Gesha,Washed,11.8,0,0,Green,87.17
+Colombia,1975.0,Bourbon,Honey,11.6,0,2,Yellow-Green,87.08
+Guatemala,1668.0,Gesha,Washed,10.7,0,2,Green,87.0
+Taiwan,1250.0,Gesha,Washed,9.1,0,0,Green,86.92
+Taiwan,1200.0,Sl34+Gesha,Natural,10.0,0,1,Yellow-Green,86.75
+Taiwan,1250.0,SL34,Washed,10.8,0,0,Green,86.67
+Tanzania,1550.0,Bourbon,Washed,11.0,0,0,Green,86.5
+Ethiopia,2000.0,Ethiopian Heirloom,Natural,11.8,0,1,Green,86.25
+Guatemala,2000.0,Gesha,Natural,11.5,0,1,Brownish,86.25
+Taiwan,1250.0,Gesha,Washed,11.9,0,0,Green,86.25
+Ethiopia,1950.0,Gesha,Natural,11.6,0,2,Yellow-Green,86.17
+Colombia,1850.0,Caturra,Washed,10.6,0,0,Green,86.17
+Taiwan,1100.0,SL34,Honey,10.2,0,0,Green,86.08
+Ethiopia,2000.0,"Wolishalo,Kurume,Dega",Washed,11.3,0,2,Green,86.08
+Taiwan,1300.0,Gesha,Natural,10.3,0,0,Yellow-Green,86.08
+Taiwan,1200.0,Gesha,Natural,11.0,0,1,Brownish,85.92
+Tanzania,1585.0,Bourbon,Washed,10.0,0,0,Green,85.83
+Guatemala,1900.0,Gesha,Natural,11.6,0,0,Yellow-Green,85.75
+Taiwan,850.0,Typica,Natural,10.4,0,0,Green,85.67
+Thailand,1600.0,Catimor,Honey,9.8,0,5,Brownish,85.67
+Colombia,1350.0,Castillo Paraguaycito,,11.3,0,2,Brownish,85.67
+Taiwan,1250.0,SL34,Washed,10.6,0,0,Blue-Green,85.58
+Brazil,1250.0,,Honey,11.3,2,3,Green,85.5
+Taiwan,1300.0,Gesha,Natural,9.1,0,2,Green,85.5
+Taiwan,1200.0,Gesha,Natural,10.6,0,0,Green,85.5
+Taiwan,1060.0,Gesha,Natural,10.2,0,0,Blue-Green,85.5
+United States (Hawaii),600.0,Typica,Washed,9.3,0,0,Green,85.42
+Taiwan,200.0,Typica,Washed,11.4,0,0,Blue-Green,85.42
+Taiwan,200.0,Typica,Washed,10.8,0,0,Green,85.33
+Taiwan,668.0,Gesha,Washed,11.3,0,0,Green,85.33
+Ethiopia,1950.0,Ethiopian Heirloom,Washed,9.9,0,3,Green,85.33
+Ethiopia,2250.0,Ethiopian Heirloom,Natural,12.3,0,4,Yellow-Green,85.33
+Ethiopia,1700.0,Ethiopian Heirloom,Washed,9.4,0,1,Green,85.25
+Taiwan,1200.0,Gesha,Washed,9.5,0,0,Blue-Green,85.25
+Taiwan,650.0,Gesha,Honey,11.3,0,0,Green,85.25
+Kenya,1750.0,SL28,Washed,9.2,0,1,Green,85.25
+Taiwan,850.0,Gesha,Washed,10.3,0,0,Blue-Green,85.17
+Taiwan,400.0,Typica,Natural,10.0,0,0,Brownish,85.08
+Taiwan,1000.0,Typica,Washed,10.5,0,0,Green,85.08
+Taiwan,800.0,Gesha,Washed,10.0,0,5,Yellow-Green,85.08
+Uganda,1905.0,SL14,Washed,11.0,0,1,Green,85.0
+Taiwan,,Typica,,10.9,0,0,Green,85.0
+Taiwan,800.0,Gesha,Natural,10.1,0,0,Yellow-Green,85.0
+Guatemala,1600.0,Caturra,Washed,9.9,0,1,Green,85.0
+Guatemala,,Catuai,Washed,11.3,0,4,Green,85.0
+Guatemala,1600.0,Caturra,Washed,11.7,0,1,Green,84.92
+Taiwan,375.0,Typica,Washed,9.5,0,2,Green,84.92
+Taiwan,230.0,Yellow Bourbon,Natural,9.7,0,0,Brownish,84.83
+Indonesia,1200.0,Catimor,,11.9,0,2,Blue-Green,84.83
+Peru,1750.0,Gesha,Washed,10.7,0,0,Green,84.83
+Tanzania,1654.0,Bourbon,Washed,11.2,0,0,Green,84.83
+Taiwan,1300.0,SL34,Natural,9.5,0,0,Green,84.83
+Taiwan,1400.0,SL34,Washed,10.4,0,0,Green,84.75
+Brazil,1100.0,Yellow Bourbon,Natural,11.2,0,5,Green,84.75
+Panama,1200.0,Catuai,Washed,10.3,0,5,Blue-Green,84.75
+Taiwan,1200.0,Yellow Bourbon,Honey,10.0,0,0,Blue-Green,84.75
+Guatemala,1600.0,Caturra,Washed,10.6,0,1,Green,84.67
+Guatemala,,Bourbon,Natural,10.9,0,2,Yellow-Green,84.67
+Costa Rica,1850.0,Caturra,Washed,10.0,0,2,Green,84.67
+Taiwan,250.0,Typica,Honey,9.6,0,0,Green,84.58
+Taiwan,700.0,Gesha,Honey,11.5,0,0,Green,84.58
+Nicaragua,1350.0,Catrenic,Natural,9.9,1,2,Green,84.58
+Taiwan,1250.0,Gesha,Washed,11.2,0,2,Green,84.58
+Taiwan,1450.0,SL34,Natural,10.3,0,0,Green,84.58
+Vietnam,650.0,Catimor,Natural,11.6,0,0,Brownish,84.58
+Costa Rica,1900.0,Gesha,Washed,11.7,0,0,Green,84.5
+Taiwan,520.0,Other,Honey,11.3,0,0,Blue-Green,84.5
+Honduras,1368.0,Catuai,Washed,9.8,0,3,Green,84.5
+Ethiopia,1943.0,Ethiopian Heirloom,Washed,10.9,0,9,Green,84.5
+Taiwan,400.0,Typica,Natural,10.2,0,0,Green,84.5
+Taiwan,850.0,Gesha,Washed,10.1,0,1,Blue-Green,84.42
+Guatemala,1350.0,Bourbon,Washed,9.2,0,5,Green,84.33
+United States (Hawaii),1300.0,Catuai,Washed,10.1,3,7,Yellow-Green,84.33
+Ethiopia,2361.0,Ethiopian Heirloom,Natural,11.0,0,4,Yellow-Green,84.33
+El Salvador,1500.0,Pacamara,Honey,10.3,0,4,Brownish,84.33
+Colombia,2100.0,Castillo And Colombia Blend,Washed,11.6,0,1,Green,84.33
+Indonesia,1300.0,"Jember,Tim-Tim,Ateng",Other,11.5,0,1,Blue-Green,84.25
+Guatemala,1600.0,Typica,Washed,10.0,0,1,Green,84.25
+Madagascar,1500.0,Bourbon,Washed,12.1,0,0,Blue-Green,84.25
+Honduras,1368.0,Catuai,Washed,10.2,0,2,Green,84.17
+Guatemala,1600.0,Caturra,Washed,11.0,0,2,Green,84.08
+Taiwan,,Other,Honey,10.8,0,2,Green,84.08
+Taiwan,800.0,Gesha,Natural,10.6,0,0,Yellow-Green,84.08
+Guatemala,1550.0,Caturra,Washed,11.0,0,2,Green,84.08
+Guatemala,1550.0,Caturra,Washed,11.0,0,2,Green,84.0
+Honduras,1800.0,Typica,Honey,9.4,0,0,Green,84.0
+Tanzania,1675.0,Bourbon,Washed,9.8,0,3,Green,84.0
+Ethiopia,1800.0,Ethiopian Heirloom,Washed,11.3,1,1,Green,84.0
+Tanzania,1550.0,Bourbon,Washed,11.6,0,2,Green,84.0
+Colombia,1550.0,Caturra,Washed,13.3,0,3,Green,84.0
+Costa Rica,1850.0,Caturra,Washed,9.5,0,2,Green,83.92
+Guatemala,1900.0,Gesha,Natural,11.9,0,0,Green,83.92
+Guatemala,1600.0,Bourbon,Washed,10.0,0,2,Green,83.92
+Thailand,1350.0,Catimor,Natural,11.6,0,3,Yellow-Green,83.92
+Colombia,1411.0,,Washed,11.9,0,1,Green,83.83
+Guatemala,1400.0,"BOURBON, CATURRA Y CATIMOR",Natural,10.8,0,4,Green,83.83
+Guatemala,,Bourbon,Washed,10.9,0,4,Green,83.83
+Ethiopia,2000.0,Ethiopian Heirloom,Washed,12.0,0,12,Green,83.83
+Colombia,1700.0,Caturra,Washed,12.1,2,5,Green,83.83
+United States (Hawaii),500.0,Typica,Washed,11.8,0,3,Green,83.83
+Colombia,1800.0,Bourbon Sidra,Honey,10.6,0,1,Green,83.75
+Mexico,1200.0,Sarchimor,Washed,11.7,4,12,Green,83.75
+Colombia,,,,12.4,1,9,Green,83.67
+Taiwan,1250.0,SL34,Washed,10.0,0,0,Blue-Green,83.67
+Myanmar,1400.0,"Catimor,Catuai,Caturra,Bourbon",Natural,10.2,0,1,Yellow-Green,83.67
+Taiwan,300.0,Other,Honey,9.2,0,0,Green,83.67
+Honduras,1470.0,Parainema,Natural,11.1,0,1,Yellow-Green,83.67
+Taiwan,325.0,Other,Natural,8.4,0,0,Green,83.58
+Taiwan,275.0,Typica,Honey,9.1,0,0,Green,83.58
+Guatemala,1600.0,Caturra,Washed,10.9,0,4,Green,83.58
+Honduras,1400.0,SHG,Washed,11.2,0,5,Green,83.5
+Colombia,1700.0,Caturra,Washed,12.2,0,2,Blue-Green,83.5
+Thailand,1390.0,Bourbon,Washed,13.1,0,0,Green,83.5
+Ethiopia,1700.0,Ethiopian Heirloom,Washed,10.4,0,11,Green,83.5
+Thailand,1450.0,Java,Washed,11.6,0,0,Green,83.42
+Uganda,1650.0,SL14,Washed,10.1,0,3,Green,83.42
+Taiwan,1100.0,Typica + Sl34,Washed,10.1,0,0,Blue-Green,83.42
+Uganda,1905.0,SL14,Washed,11.1,0,5,Green,83.33
+Taiwan,250.0,Typica,Honey,9.7,0,0,Green,83.33
+Guatemala,1302.5,"MARSELLESA, CATUAI, CATURRA & MARSELLESA, ANACAFE 14, CATUAI",Washed,11.4,0,0,Green,83.33
+Taiwan,300.0,Typica,Washed,9.6,0,1,Green,83.33
+Colombia,1100.0,Caturra,Washed,13.5,0,0,Green,83.33
+Costa Rica,1850.0,Caturra,Washed,0.0,0,3,Green,83.33
+Taiwan,750.0,SL34,Washed,10.7,0,1,Blue-Green,83.33
+Thailand,1400.0,Typica,Washed,12.3,0,16,Yellow-Green,83.33
+Tanzania,1550.0,Bourbon,Washed,10.4,0,8,Green,83.25
+Brazil,950.0,Mundo Novo,Natural,11.6,0,4,Green,83.25
+Taiwan,1150.0,Other,Washed,9.6,0,1,Green,83.25
+Colombia,1390.0,"Red Bourbon,Caturra",Other,10.9,0,2,Brownish,83.25
+Honduras,1600.0,Lempira,Washed,10.5,0,3,Blue-Green,83.25
+Honduras,1400.0,Catuai,Washed,11.3,0,5,Green,83.25
+Taiwan,250.0,Typica,Natural,9.7,0,2,Green,83.17
+Taiwan,340.0,Other,Washed,11.8,0,0,Blue-Green,83.17
+Laos,1250.0,Catimor,Natural,11.8,0,7,Brownish,83.08
+Honduras,1368.0,Catuai,Washed,10.6,0,7,Green,83.08
+Honduras,1450.0,Catuai,Washed,9.6,0,2,Green,83.08
+Colombia,1650.0,Caturra,Washed,13.1,0,1,Blue-Green,83.0
+Taiwan,275.0,Typica,Honey,8.9,0,0,Blue-Green,82.92
+Mexico,1350.0,Bourbon,Washed,11.9,2,1,Green,82.92
+Colombia,1350.0,Typica Gesha,Washed,11.5,0,3,Green,82.92
+Taiwan,1200.0,Gesha,,10.2,0,0,Yellow-Green,82.92
+Honduras,1280.0,Catuai,Washed,10.0,0,4,Green,82.83
+Thailand,1400.0,Gayo,Washed,11.8,0,5,Yellow-Green,82.83
+Vietnam,900.0,Catimor,Honey,13.3,0,4,Green,82.83
+Nicaragua,1200.0,SHG,Natural,10.5,5,1,Green,82.75
+Costa Rica,1450.0,SL28,Honey,11.8,0,1,Yellow-Green,82.75
+Colombia,1700.0,Caturra,Washed,11.8,0,2,Green,82.67
+Thailand,1390.0,Caturra,Washed,13.0,1,0,Green,82.67
+Thailand,1200.0,"Bourbon, Catimor, Caturra, Typica",Natural,11.2,0,0,Yellow-Green,82.67
+Honduras,1450.0,Catuai,Washed,9.6,0,2,Green,82.67
+Taiwan,,Unknow,Natural,9.8,0,0,Green,82.58
+Taiwan,465.0,Caturra,Washed,8.4,0,2,Blue-Green,82.58
+Nicaragua,1350.0,Parainema,Washed,10.1,0,0,Green,82.58
+El Salvador,1200.0,Bourbon,Washed,11.3,0,2,Green,82.5
+Panama,1200.0,Caturra,Washed,10.0,0,0,Green,82.5
+Brazil,1100.0,Mundo Novo,Natural,11.8,0,1,Blue-Green,82.5
+United States (Hawaii),640.0,Maragogipe,Washed,11.7,0,1,Blue-Green,82.5
+Mexico,1340.0,Pacamara,Washed,10.7,0,0,Yellow-Green,82.5
+Honduras,1368.0,Catuai,Washed,10.6,0,8,Green,82.5
+Taiwan,,Other,Washed,8.4,0,2,Green,82.5
+Nicaragua,1275.0,Caturra-Catuai,Washed,11.4,0,0,Blue-Green,82.42
+Vietnam,1040.0,Catimor,Washed,10.5,0,0,Blue-Green,82.33
+El Salvador,1200.0,Bourbon,Washed,12.0,0,10,Green,82.33
+El Salvador,1200.0,Bourbon,Washed,11.8,0,0,Blue-Green,82.33
+Taiwan,,Other,Natural,10.8,0,1,Green,82.33
+Peru,1600.0,Caturra,Washed,11.7,0,3,Green,82.25
+United States (Hawaii),1200.0,Typica,Washed,10.6,1,5,Green,82.17
+Kenya,1725.0,"Sl28,Sl34,Ruiru11",Washed,11.2,0,2,Green,82.17
+Honduras,1368.0,Catuai,Washed,10.6,0,8,Green,82.17
+Taiwan,600.0,Other,Washed,9.7,0,0,Blue-Green,82.08
+Taiwan,460.0,Other,Honey,8.1,0,3,Green,82.08
+Taiwan,500.0,Other,Washed,8.2,0,1,Green,82.0
+Thailand,1000.0,Catimor,Washed,9.8,0,0,Green,82.0
+Costa Rica,1500.0,Caturra,Washed,10.5,1,8,Green,82.0
+Guatemala,1450.0,,Washed,11.5,0,2,Blue-Green,82.0
+Indonesia,1350.0,,Honey,12.5,0,0,Blue-Green,82.0
+Peru,1600.0,Caturra,Washed,11.6,0,2,Green,81.92
+Guatemala,1400.0,Caturra,Washed,10.3,0,1,Green,81.92
+Taiwan,300.0,Typica,Honey,11.3,0,0,Green,81.83
+Vietnam,,Catimor,Honey,11.2,0,4,Green,81.83
+Brazil,1000.0,Yellow Catuai,Honey,11.3,0,2,Yellow-Green,81.83
+Brazil,950.0,Catucai,Natural,11.1,0,0,Yellow-Green,81.75
+Colombia,1574.0,Santander,Washed,11.2,0,0,Yellow-Green,81.75
+Mexico,1200.0,Typica,Washed,11.8,2,2,Green,81.67
+Costa Rica,1200.0,Caturra,Washed,9.7,0,4,Green,81.58
+Taiwan,300.0,Typica,Honey,9.0,0,0,Yellow-Green,81.58
+Taiwan,435.0,Other,Honey,8.5,0,0,Green,81.5
+Thailand,1400.0,Java,Washed,11.6,2,1,Green,81.42
+Thailand,1400.0,Typica Bourbon Caturra Catimor,Natural,10.5,0,5,Yellow-Green,81.33
+Thailand,700.0,Catimor,Washed,10.4,0,0,Green,81.17
+Colombia,1550.0,"Caturra,Colombia,Castillo",Washed,11.4,0,2,Green,81.17
+Brazil,1200.0,,Natural,10.6,0,1,Green,81.0
+El Salvador,1400.0,Bourbon,Natural,10.5,0,7,Blue-Green,80.83
+Nicaragua,1100.0,Caturra,Washed,11.5,0,3,Green,80.5
+Nicaragua,1000.0,Sarchimor,Washed,11.2,0,5,Green,80.42
+Colombia,1600.0,"Castillo,Caturra,Bourbon",Washed,11.0,0,3,Green,80.42
+Peru,1600.0,Caturra,Washed,11.8,0,11,Green,80.33
+El Salvador,1300.0,Pacas,Natural,11.5,0,7,Blue-Green,80.33
+Brazil,1200.0,Catuai And Mundo Novo,Natural,11.6,0,2,Green,80.17
+Brazil,950.0,Mundo Novo,Natural,11.4,0,4,Green,80.08
+Nicaragua,1200.0,SHG,Natural,10.4,0,12,Green,80.0
+Laos,1300.0,Catimor,Washed,11.6,0,11,Green,79.67
+El Salvador,1200.0,Maragogipe,Natural,11.0,0,13,Blue-Green,78.08
+Brazil,975.0,Mundo Novo,Semi-Washed,11.3,0,1,Green,78.0

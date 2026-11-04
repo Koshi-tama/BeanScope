@@ -1,0 +1,173 @@
+{
+  "version": "0.2.3",
+  "trained_at_utc": "2026-11-04T03:13:52.782327+00:00",
+  "selected_model": "random_forest",
+  "selection_rule": "d02_mae_best_non_dummy_WARNING_does_not_beat_dummy",
+  "feature_columns": [
+    "country",
+    "altitude_m",
+    "variety",
+    "process",
+    "moisture_pct",
+    "category_1_defects",
+    "category_2_defects",
+    "color"
+  ],
+  "target_column": "target_score",
+  "rare_min_count": 10,
+  "shrinkage": {
+    "cutoff": "2016-01-01",
+    "a_by_model": {
+      "ridge": 0.4,
+      "random_forest": 0.4,
+      "hist_gradient_boosting": 0.3
+    },
+    "center": "mean of in-sample predictions, stored at fit",
+    "n_early": 817,
+    "n_late": 205,
+    "n_undated_excluded": 287,
+    "dummy_median": "not shrunk"
+  },
+  "level_calibration": {
+    "n_calibration": 30,
+    "n_holdout": 177,
+    "calibration_start": "2022-05-11",
+    "calibration_end": "2022-07-11",
+    "bias_by_model": {
+      "ridge": 1.2005380275752549,
+      "random_forest": 1.146595205731307,
+      "hist_gradient_boosting": 1.1967864080209176
+    },
+    "selected_bias": 1.146595205731307,
+    "rule": "Earliest D02 rows by grading date estimate one additive constant. Holdout rows are not used to fit the model or the constant."
+  },
+  "n_splits_group_kfold": 5,
+  "n_d01": 1309,
+  "n_d02": 207,
+  "n_production_train": 1309,
+  "d01_exclusions": {
+    "robusta": 28,
+    "zero_target_score": 1,
+    "missing_country": 1
+  },
+  "d02_exclusions": {},
+  "input_ranges_production": {
+    "altitude_m": {
+      "min": 200.0,
+      "max": 2500.0
+    },
+    "moisture_pct": {
+      "min": 0.0,
+      "max": 28.000000000000004
+    },
+    "category_1_defects": {
+      "min": 0.0,
+      "max": 31.0
+    },
+    "category_2_defects": {
+      "min": 0.0,
+      "max": 55.0
+    },
+    "country": {
+      "categories": [
+        "Brazil",
+        "Burundi",
+        "China",
+        "Colombia",
+        "Costa Rica",
+        "Cote d'Ivoire",
+        "Ecuador",
+        "El Salvador",
+        "Ethiopia",
+        "Guatemala",
+        "Haiti",
+        "Honduras",
+        "India",
+        "Indonesia",
+        "Japan",
+        "Kenya",
+        "Laos",
+        "Malawi",
+        "Mauritius",
+        "Mexico",
+        "Myanmar",
+        "Nicaragua",
+        "Panama",
+        "Papua New Guinea",
+        "Peru",
+        "Philippines",
+        "Rwanda",
+        "Taiwan",
+        "Tanzania",
+        "Thailand",
+        "Uganda",
+        "United States",
+        "United States (Hawaii)",
+        "United States (Puerto Rico)",
+        "Vietnam",
+        "Zambia"
+      ]
+    },
+    "variety": {
+      "categories": [
+        "Arusha",
+        "Blue Mountain",
+        "Bourbon",
+        "Catimor",
+        "Catuai",
+        "Caturra",
+        "Ethiopian Heirloom",
+        "Gesha",
+        "Hawaiian Kona",
+        "Java",
+        "Mandheling",
+        "Maragogipe",
+        "Moka Peaberry",
+        "Mundo Novo",
+        "Other",
+        "Pacamara",
+        "Pacas",
+        "Pache",
+        "Peaberry",
+        "Ruiru 11",
+        "SL14",
+        "SL28",
+        "SL34",
+        "Sulawesi",
+        "Sumatra",
+        "Typica",
+        "Yellow Bourbon",
+        "Yirgacheffe"
+      ]
+    },
+    "process": {
+      "categories": [
+        "Honey",
+        "Natural",
+        "Other",
+        "Semi-Washed",
+        "Washed"
+      ]
+    },
+    "color": {
+      "categories": [
+        "Blue-Green",
+        "Green"
+      ]
+    }
+  },
+  "notes": [
+    "Displayed MAE is the calibrated holdout, not the rows used to choose the constant.",
+    "Production model is fit on D01 only. The earliest 30 D02 rows add one constant.",
+    "Holdout D02 labels are not used to refit the model.",
+    "Imputation / rare-Other / encoding are fit inside Pipeline only.",
+    "Shrinkage factor a is chosen on D01 graded in 2016 or later.",
+    "At predict time, scores shrink toward the training-set prediction mean, then the constant is added."
+  ],
+  "timing": {
+    "fit_d01_seconds": 0.3439992908388376,
+    "predict_d02_seconds": 0.009666082914918661,
+    "predict_d02_per_row_ms": 0.046696052729075656
+  },
+  "model_path": "beanscope_pipeline.joblib"
+}

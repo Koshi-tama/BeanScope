@@ -1,0 +1,54 @@
+{
+  "created_at_utc": "2026-11-04T03:23:32.105228+00:00",
+  "n_calibration": 30,
+  "n_holdout": 177,
+  "calibration_start": "2022-05-11",
+  "calibration_end": "2022-07-11",
+  "rule": "Fit on all D01. Shrink with a chosen on D01 from 2016 onward. bias = mean(actual - shrunk prediction) on the earliest 30 D02 rows. Holdout labels are not used.",
+  "models": {
+    "dummy_median": {
+      "a": null,
+      "bias": 1.0159999999999996,
+      "calibration_prediction_mean": 82.5,
+      "calibration_actual_mean": 83.516,
+      "holdout_not_used_for_bias": {
+        "mae": 1.407706214689265,
+        "rmse": 1.8008258494682354,
+        "r2": -0.015554761665654393
+      }
+    },
+    "ridge": {
+      "a": 0.4,
+      "bias": 1.2005380275752549,
+      "calibration_prediction_mean": 82.31546197242476,
+      "calibration_actual_mean": 83.516,
+      "holdout_not_used_for_bias": {
+        "mae": 1.3882372911709568,
+        "rmse": 1.760881006287407,
+        "r2": 0.028998428605996773
+      }
+    },
+    "random_forest": {
+      "a": 0.4,
+      "bias": 1.146595205731307,
+      "calibration_prediction_mean": 82.3694047942687,
+      "calibration_actual_mean": 83.516,
+      "holdout_not_used_for_bias": {
+        "mae": 1.3687045045201331,
+        "rmse": 1.7383187499019255,
+        "r2": 0.053721998528239334
+      }
+    },
+    "hist_gradient_boosting": {
+      "a": 0.3,
+      "bias": 1.1967864080209176,
+      "calibration_prediction_mean": 82.31921359197909,
+      "calibration_actual_mean": 83.516,
+      "holdout_not_used_for_bias": {
+        "mae": 1.3875106251637865,
+        "rmse": 1.7693103564135286,
+        "r2": 0.01967979457448188
+      }
+    }
+  }
+}

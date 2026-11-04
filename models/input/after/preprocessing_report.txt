@@ -1,0 +1,48 @@
+BeanScope D01 preprocessing report
+============================================================
+Input : /Users/koshi/workspace/dev/personalDev/BeanScope/models/input/before/coffee_ratings.csv
+Output: /Users/koshi/workspace/dev/personalDev/BeanScope/models/input/after/coffee_ratings_clean.csv
+
+Counts
+----------------------------------------
+rows_in                 : 1339
+rows_out                : 1309
+rows_excluded           : 30
+
+Exclusions (by reason)
+----------------------------------------
+  robusta: 28
+  zero_target_score: 1
+  missing_country: 1
+
+Altitude corrections (before range filter)
+----------------------------------------
+  raw_override_out_of_range_mean: 3
+  apostrophe_thousands: 2
+  decimal_point_dropped: 2
+  scale_div_10: 1
+  meters_before_paren: 1
+  scale_div_100: 1
+  from_raw_missing_mean: 1
+  oo_typo: 1
+altitude_out_of_range_set_to_missing: 41
+valid_altitude_range_m: [200, 2500]
+
+Missing rate after cleaning (%)
+----------------------------------------
+  country: 0.00%
+  altitude_m: 20.32%
+  variety: 15.28%
+  process: 11.46%
+  moisture_pct: 0.00%
+  category_1_defects: 0.00%
+  category_2_defects: 0.00%
+  color: 20.32%
+  target_score: 0.00%
+
+Notes
+----------------------------------------
+- Imputation, scaling, encoding, and low-frequency Other collapsing are NOT applied here (要件 4.4 / 5.2).
+- moisture==0 is kept as a valid value (D01: ratio*100, D02: percent as-is).
+- Sensory / farm / certification columns are dropped (要件 3.3).
+- Excluded 1 row with total_cup_points==0 (country='Honduras', cupping sub-scores all zero; Honduras).

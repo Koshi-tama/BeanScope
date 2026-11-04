@@ -1,0 +1,42 @@
+[
+  {
+    "feature": "altitude_m",
+    "importance_mean": 0.027262723877555926,
+    "importance_std": 0.01552153490054401
+  },
+  {
+    "feature": "category_2_defects",
+    "importance_mean": 0.0232166344365754,
+    "importance_std": 0.016034463664789705
+  },
+  {
+    "feature": "category_1_defects",
+    "importance_mean": 0.010571255965876936,
+    "importance_std": 0.006817188057845033
+  },
+  {
+    "feature": "country",
+    "importance_mean": 0.009238339444543376,
+    "importance_std": 0.012694440750579239
+  },
+  {
+    "feature": "color",
+    "importance_mean": 0.0009705759925636937,
+    "importance_std": 0.002164080193238482
+  },
+  {
+    "feature": "process",
+    "importance_mean": -0.0023242647281918717,
+    "importance_std": 0.004745356644449436
+  },
+  {
+    "feature": "moisture_pct",
+    "importance_mean": -0.011119850151199739,
+    "importance_std": 0.005274613819477645
+  },
+  {
+    "feature": "variety",
+    "importance_mean": -0.041325027947422675,
+    "importance_std": 0.006944234745394315
+  }
+]

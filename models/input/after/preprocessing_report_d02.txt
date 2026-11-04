@@ -1,0 +1,38 @@
+BeanScope D02 preprocessing report
+============================================================
+Input : /Users/koshi/workspace/dev/personalDev/BeanScope/models/input/before/df_arabica_clean.csv
+Output: /Users/koshi/workspace/dev/personalDev/BeanScope/models/input/after/df_arabica_clean_clean.csv
+
+Counts
+----------------------------------------
+rows_in                 : 207
+rows_out                : 207
+rows_excluded           : 0
+
+Exclusions (by reason)
+----------------------------------------
+  (none)
+
+Altitude corrections (before range filter)
+----------------------------------------
+  (none)
+altitude_out_of_range_set_to_missing: 9
+valid_altitude_range_m: [200, 2500]
+
+Missing rate after cleaning (%)
+----------------------------------------
+  country: 0.00%
+  altitude_m: 4.83%
+  variety: 2.90%
+  process: 2.42%
+  moisture_pct: 0.00%
+  category_1_defects: 0.00%
+  category_2_defects: 0.00%
+  color: 0.00%
+  target_score: 0.00%
+
+Notes
+----------------------------------------
+- Imputation, scaling, encoding, and low-frequency Other collapsing are NOT applied here (要件 4.4 / 5.2).
+- moisture==0 is kept as a valid value (D01: ratio*100, D02: percent as-is).
+- Sensory / farm / certification columns are dropped (要件 3.3).
