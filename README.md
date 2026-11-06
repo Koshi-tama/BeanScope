@@ -2,7 +2,7 @@
 
 アラビカ種の生豆条件から、カッピング総合点の参考値を予測する Streamlit アプリです。品質認証や取引判断には使いません。
 
-公開アプリ: https://beanscope-um49b9it9bbt44tqfv84na.streamlit.app/
+公開アプリ: https://beanscope-um49b9it9bbt44tqfv84na.streamlit.app
 
 ## 起動
 
@@ -27,7 +27,7 @@ pytest
 | データ | 役割 | 出典 |
 |--------|------|------|
 | D01 | 学習（整形後 1,309 件） | [TidyTuesday 2020-07-07 Coffee Ratings](https://github.com/rfordatascience/tidytuesday/tree/main/data/2020/2020-07-07) |
-| D02 | 水準の定数 30 件と採点 177 件 | [Coffee Quality Data (CQI May-2023)](https://www.kaggle.com/datasets/fatihb/coffee-quality-data-cqi) / [配布リポジトリ](https://github.com/fatih-boyar/coffee-quality-data-CQI) |
+| D02 | 水準の定数 30 件と評価 177 件 | [Coffee Quality Data (CQI May-2023)](https://www.kaggle.com/datasets/fatihb/coffee-quality-data-cqi) / [配布リポジトリ](https://github.com/fatih-boyar/coffee-quality-data-CQI) |
 
 元の評価は Coffee Quality Institute のものです。配布データのライセンスは MIT と判断しています（確認日 2026-10-20。詳細は `doc/data_ledger.md`）。
 
