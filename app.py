@@ -325,7 +325,6 @@ def render_data(artifacts: Artifacts) -> None:
     )
     st.write(
         "配布データのライセンスは MIT・CCO と判断しています（確認日 2026-10-20）。"
-        "学習とこのアプリでの利用ができる、という前提です。"
     )
 
     fills = artifacts.imputation_values
